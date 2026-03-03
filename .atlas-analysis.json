@@ -1,0 +1,298 @@
+{
+  "projectType": "framework",
+  "projectName": "Dagster",
+  "projectDescription": "A cloud-native data pipeline orchestrator for developing, producing, and observing data assets.",
+  "theme": "aspen",
+  "primaryColor": "#4F43DD",
+  "lightColor": "#6B5FE8",
+  "darkColor": "#3B32A8",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Get Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/assets",
+              "concepts/ops-jobs",
+              "concepts/resources",
+              "concepts/schedules-sensors"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Building Pipelines",
+            "pages": [
+              "guides/assets/defining-assets",
+              "guides/assets/asset-dependencies",
+              "guides/assets/partitioning",
+              "guides/assets/materialization"
+            ]
+          },
+          {
+            "group": "Ops & Jobs",
+            "pages": [
+              "guides/ops/defining-ops",
+              "guides/ops/building-jobs",
+              "guides/ops/configuration"
+            ]
+          },
+          {
+            "group": "Automation",
+            "pages": [
+              "guides/automation/schedules",
+              "guides/automation/sensors",
+              "guides/automation/declarative-automation"
+            ]
+          },
+          {
+            "group": "Data Quality",
+            "pages": [
+              "guides/quality/asset-checks",
+              "guides/quality/testing",
+              "guides/quality/metadata"
+            ]
+          },
+          {
+            "group": "Resources & I/O",
+            "pages": [
+              "guides/resources/defining-resources",
+              "guides/resources/io-managers",
+              "guides/resources/configuration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Deployment",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "deployment/overview",
+              "deployment/architecture",
+              "deployment/dagster-instance"
+            ]
+          },
+          {
+            "group": "Deployment Options",
+            "pages": [
+              "deployment/docker",
+              "deployment/kubernetes",
+              "deployment/helm",
+              "deployment/aws",
+              "deployment/gcp",
+              "deployment/azure"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "deployment/daemon",
+              "deployment/monitoring",
+              "deployment/logging",
+              "deployment/security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "integrations/overview"
+            ]
+          },
+          {
+            "group": "Data Transformation",
+            "pages": [
+              "integrations/dbt",
+              "integrations/duckdb",
+              "integrations/pandas",
+              "integrations/pyspark"
+            ]
+          },
+          {
+            "group": "Cloud Platforms",
+            "pages": [
+              "integrations/aws",
+              "integrations/gcp",
+              "integrations/azure",
+              "integrations/databricks",
+              "integrations/snowflake"
+            ]
+          },
+          {
+            "group": "ETL & Data Movement",
+            "pages": [
+              "integrations/airlift",
+              "integrations/fivetran",
+              "integrations/airbyte",
+              "integrations/dlt",
+              "integrations/sling"
+            ]
+          },
+          {
+            "group": "Observability",
+            "pages": [
+              "integrations/datadog",
+              "integrations/datahub",
+              "integrations/census"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core Decorators",
+            "pages": [
+              "api/decorators/asset",
+              "api/decorators/op",
+              "api/decorators/job",
+              "api/decorators/graph",
+              "api/decorators/schedule",
+              "api/decorators/sensor"
+            ]
+          },
+          {
+            "group": "Definitions",
+            "pages": [
+              "api/definitions/definitions",
+              "api/definitions/asset-spec",
+              "api/definitions/asset-dep",
+              "api/definitions/resource",
+              "api/definitions/io-manager"
+            ]
+          },
+          {
+            "group": "Execution",
+            "pages": [
+              "api/execution/materialize",
+              "api/execution/execute-job",
+              "api/execution/run-request",
+              "api/execution/context"
+            ]
+          },
+          {
+            "group": "Partitions & Schedules",
+            "pages": [
+              "api/partitions/partitions-definition",
+              "api/partitions/time-window",
+              "api/partitions/static-partitions",
+              "api/partitions/dynamic-partitions"
+            ]
+          },
+          {
+            "group": "Asset Checks",
+            "pages": [
+              "api/asset-checks/asset-check",
+              "api/asset-checks/asset-check-result",
+              "api/asset-checks/asset-check-spec"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "api/config/config",
+              "api/config/config-schema",
+              "api/config/env-var"
+            ]
+          },
+          {
+            "group": "CLI",
+            "pages": [
+              "api/cli/dagster-cli",
+              "api/cli/dagster-daemon",
+              "api/cli/dg-cli"
+            ]
+          },
+          {
+            "group": "GraphQL",
+            "pages": [
+              "api/graphql/overview",
+              "api/graphql/queries",
+              "api/graphql/mutations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Community",
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "community/contributing",
+              "community/changelog",
+              "community/support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Declarative asset-based pipeline orchestration",
+    "Built-in observability and data lineage tracking",
+    "Comprehensive testing framework for data pipelines",
+    "Rich library of integrations with modern data stack tools",
+    "Flexible deployment options (local, Docker, Kubernetes, cloud)",
+    "Declarative automation with schedules and sensors",
+    "Asset checks for data quality validation",
+    "Partitioned assets for incremental processing",
+    "Type-safe configuration with Python",
+    "GraphQL API and web-based UI"
+  ],
+  "publicApiSurface": [
+    "@asset - Define data assets",
+    "@multi_asset - Define multiple related assets",
+    "@op - Define computation units",
+    "@job - Define executable workflows",
+    "@graph - Compose ops into reusable graphs",
+    "@schedule - Define time-based automation",
+    "@sensor - Define event-based automation",
+    "@asset_check - Define data quality checks",
+    "@resource - Define reusable resources",
+    "Definitions - Container for all definitions",
+    "ConfigurableResource - Type-safe resource configuration",
+    "AssetSelection - Select assets for execution",
+    "DailyPartitionsDefinition - Daily time partitions",
+    "HourlyPartitionsDefinition - Hourly time partitions",
+    "StaticPartitionsDefinition - Static partition keys",
+    "DynamicPartitionsDefinition - Runtime partition keys",
+    "materialize - Execute asset materialization",
+    "define_asset_job - Create jobs from assets",
+    "AssetSpec - Declarative asset specification",
+    "AssetDep - Declare asset dependencies",
+    "AssetIn - Configure asset inputs",
+    "AssetOut - Configure asset outputs",
+    "OpExecutionContext - Runtime context for ops",
+    "AssetExecutionContext - Runtime context for assets",
+    "RunRequest - Request pipeline execution",
+    "SkipReason - Skip execution with reason",
+    "BackfillPolicy - Configure backfill behavior",
+    "AutoMaterializePolicy - Automatic asset refresh",
+    "FreshnessPolicy - Define data freshness requirements",
+    "RetryPolicy - Configure retry behavior",
+    "dagster CLI - Command-line interface",
+    "dagster-daemon - Background process runner",
+    "dg CLI - Code generation and scaffolding"
+  ]
+}
